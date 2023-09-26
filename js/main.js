@@ -30,7 +30,7 @@ async function searchWord() {
 
     if (words.title) {
         let message = words.message;
-        const emojis = ["😢", "😖", "😕", "😔", "🙁", "☹️", "😥"];
+        const emojis = ["😢", "😖", "😕", "😔", "🙁", "☹️", "😥", "😣", "🙃", "🫠", "😵‍💫"];
         const emojiAleatorio = Math.floor(Math.random() * emojis.length);
 
         const div = document.createElement("div");
@@ -99,6 +99,36 @@ async function searchWord() {
     })
 
     if (!audioUrl) {div.querySelector(".play-button").style.display = "none"}
+
+    
+
+    if (searchParam.toLowerCase() === "carpi") {
+        /** easter egg */
+        const carpiDiv = document.createElement("div");
+        carpiDiv.innerHTML = `
+        <div class="definition">
+                        <div class="definition-type">
+                            <h3 class="definition-type-title">content creator</h3>
+                        </div>
+                        <div class="definition-meanings">
+                            <h4 class="definition-meanings-title">What does he do</h4>
+                            <ul class="definition-meanings-list">
+                                <li class="definition-meaning">
+                                    <p class="definition-meaning-text">Creates content about web development in his YouTube channel.</p>
+                                    <p class="definition-meaning-example">HTML, CSS, JavaScript, React and more</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="definition-source">
+                            <h4 class="definition-source-title">Source</h4>
+                            <a class="definition-source-link" href="https://youtube.com/carpicoder" target="_blank">
+                                https://youtube.com/carpicoder
+                                <i class="bi bi-box-arrow-up-right"></i>
+                            </a>
+                        </div>
+                    </div>`
+        div.append(carpiDiv);
+    }
 
     const definitions = document.createElement("div");
     definitions.classList.add("definitions");
