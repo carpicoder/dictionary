@@ -165,7 +165,7 @@ async function searchWord() {
                                     ${
                                         meaning.synonyms.map(synonym => {
                                             return `
-                                                <li><a href="/?s=${synonym}">${synonym}</a></li>
+                                                <li><a href="./?s=${synonym}">${synonym}</a></li>
                                             `
                                         }).join('')
                                     }
@@ -183,7 +183,7 @@ async function searchWord() {
                                     ${
                                         meaning.antonyms.map(antonym => {
                                             return `
-                                            <li><a href="/?s=${antonym}">${antonym}</a></li>
+                                            <li><a href="./?s=${antonym}">${antonym}</a></li>
                                             `
                                         }).join('')
                                     }
