@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dictionary</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+
+    <header class="header">
+        <a class="logo" href="./">
+            <i class="bi bi-journals"></i>
+            <span>Dictionary</span>
+        </a>
+        <button class="color-mode" id="color-mode">
+            <i class="bi bi-moon-fill moon"></i>
+            <i class="bi bi-sun-fill sun"></i>
+        </button>
+    </header>
+    <main class="main">
+        <form class="input-container" id="search-form" method="get">
+            <input id="search-input" class="input" type="text" name="s" placeholder="Search for any word...">
+            <button type="submit" class="submit">
+                <i class="bi bi-search"></i>
+            </button>
+        </form>
+        <section class="definition-container" id="definition-container">
+        </section>
+    </main>
+    
+    <script src="./js/main.js"></script>
+</body>
+</html>
