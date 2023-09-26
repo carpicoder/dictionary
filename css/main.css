@@ -311,3 +311,30 @@ body {
 .not-found-message {
     font-size: 1.25rem;
 }
+
+@media (max-width: 768px) {
+
+    .input {
+        font-size: 1rem;
+    }
+    
+    .main-word-title {
+        font-size: 2rem;
+    }
+
+    .main-word-pronunciation {
+        font-size: 1.125rem;
+    }
+
+    .definition-type-title {
+        font-size: 1.125rem;
+    }
+
+    .definition-meanings-title, .definition-source-title, .definition-synonyms-title, .definition-antonyms-title {
+        font-size: 1rem;
+    }
+
+    .definition-meaning {
+        font-size: .9375rem;
+    }
+}
